@@ -1,5 +1,53 @@
-* {
+* *::before,
+*::after {
   margin: 0;
   padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+
+a {
+  text-decoration: none;
+}
+
+.header {
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h2,
+h3 {
+  color: darkgray;
+  font-size: 16px;
+}
+body {
+  height: 100%;
+  line-height: 1;
   font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+/* SECTION  */
+
+.product-description {
+}
+
+.feautered-products-carousel {
+}
+
+.grid-col {
+}
+
+.icon {
+}
+
+.medium-title--icon {
 }
