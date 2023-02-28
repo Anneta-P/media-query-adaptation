@@ -16,6 +16,7 @@ a {
   text-align: center;
   height: 10em;
   padding: 0 5%;
+  display: block;
 }
 
 h1 {
@@ -25,11 +26,6 @@ h1 {
   padding-right: 11em;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 16px;
-}
-
 h2,
 p {
   color: darkgray;
@@ -37,27 +33,27 @@ p {
 }
 body {
   height: 100%;
-  line-height: 1;
   font-family: 'Poppins', sans-serif;
-}
-
-.wrapper {
-  min-height: 100%;
 }
 
 /* SECTION  */
 
-.product-description {
+.grid:not(:last-child) {
+  margin-bottom: 6.3rem;
+}
+.grid {
+  display: grid;
+  column-gap: 3.4rem;
+  row-gap: 4.6rem;
 }
 
-.feautered-products-carousel {
+.container {
+  max-width: 120rem;
+  /* padding: 0 5.2rem; */
+  margin: 0 auto;
+  text-align: center;
 }
 
-.grid-col {
-}
-
-.icon {
-}
-
-.medium-title--icon {
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
