@@ -1,16 +1,4 @@
-* *::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
 /*HEADER*/
-
-a {
-  text-decoration: none;
-}
 
 .header {
   text-align: center;
@@ -20,17 +8,16 @@ a {
 }
 
 h1 {
-  font-weight: bold;
   font-size: 36px;
-  padding-left: 11em;
-  padding-right: 11em;
+  padding: 0 27%;
 }
 
 h2,
 p {
   color: darkgray;
-  font-size: 16px;
+  font-size: 15px;
 }
+
 body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
@@ -39,7 +26,7 @@ body {
 /* SECTION  */
 
 .grid:not(:last-child) {
-  margin-bottom: 6.3rem;
+  margin-bottom: 5.3rem;
 }
 .grid {
   display: grid;
@@ -49,11 +36,33 @@ body {
 
 .container {
   max-width: 120rem;
-  /* padding: 0 5.2rem; */
-  margin: 0 auto;
+  padding: 0 8rem;
+  margin: 0px auto;
   text-align: center;
 }
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.feautre-title {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: calc(20px + (50 - 20) * ((100vw -320px) / (1200 - 320)));
+  }
+  .header {
+    font-size: calc(20px + (30 - 20) * ((100vw -320px) / (1200 - 320)));
+    margin-bottom: calc(10px + (20 - 10) * ((100vw -320px) / (1200 - 320)));
+  }
 }
