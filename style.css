@@ -8,14 +8,14 @@
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 26px;
   padding: 0 27%;
 }
 
 h2,
 p {
   color: darkgray;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 body {
@@ -26,12 +26,13 @@ body {
 /* SECTION  */
 
 .grid:not(:last-child) {
-  margin-bottom: 5.3rem;
+  margin-bottom: 1.3rem;
 }
+
 .grid {
   display: grid;
-  column-gap: 3.4rem;
-  row-gap: 4.6rem;
+  column-gap: 15.4rem;
+  row-gap: 2.6rem;
 }
 
 .container {
@@ -41,28 +42,27 @@ body {
   text-align: center;
 }
 
+.feature {
+}
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.feautre-title {
-  font-size: 1.4rem;
+.feauture-title {
+  font-size: 1rem;
   color: #333;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .feature-text {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   line-height: 1.7;
 }
 
 @media (max-width: 1200px) {
   .container {
     padding: calc(20px + (50 - 20) * ((100vw -320px) / (1200 - 320)));
-  }
-  .header {
-    font-size: calc(20px + (30 - 20) * ((100vw -320px) / (1200 - 320)));
-    margin-bottom: calc(10px + (20 - 10) * ((100vw -320px) / (1200 - 320)));
   }
 }
