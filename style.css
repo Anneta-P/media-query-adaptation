@@ -6,14 +6,14 @@
 }
 
 .header {
-  /* text-align: center; */
+  text-align: center;
   /* height: 10em; */
-  padding: 0 5%;
+  padding: 0 2%;
   display: block;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 500;
   /* padding: 0 27%; */
 }
@@ -69,7 +69,13 @@ body {
 }
 
 @media (max-width: 1280px) {
-  .container {
-    padding: calc(20px + (50 - 20) * ((100vw -320px) / (1200 - 320)));
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
